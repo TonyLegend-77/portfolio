@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony Legend - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        nav .links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        nav a.active {
+            background: rgba(255,255,255,0.3);
+            border-bottom: 2px solid white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1, h2, h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #667eea;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav .links {
+                width: 100%;
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Tony Legend</h1>
+            <div class="links">
+                <a onclick="showPage('home')" id="nav-home" class="active">Home</a>
+                <a onclick="showPage('projects')" id="nav-projects">Projects</a>
+                <a onclick="showPage('about')" id="nav-about">About</a>
+                <a onclick="showPage('contact')" id="nav-contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- HOME PAGE -->
+        <div id="home" class="page active">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hey there! I'm <strong>Tony Legend</strong>, a full-stack developer, AI enthusiast, and crypto innovator with <strong>5 years of experience</strong> in DeFi, trading, and smart contracts. I specialize in building intelligent trading systems, prediction markets, and cutting-edge web3 applications.</p>
+
+            <h2>🚀 What I Do</h2>
+            <ul>
+                <li><strong>DeFi Development</strong> - Building decentralized finance protocols and tools</li>
+                <li><strong>AI & Agents</strong> - Creating intelligent systems for trading and portfolio management</li>
+                <li><strong>Smart Contracts</strong> - Solidity development and protocol design</li>
+                <li><strong>Trading Tools</strong> - Building backtesting engines and market analysis platforms</li>
+                <li><strong>Content Creation</strong> - Sharing crypto insights and education</li>
+                <li><strong>Prediction Markets</strong> - Working on market prediction technologies</li>
+            </ul>
+
+            <h2>🏆 Highlights</h2>
+            <ul>
+                <li><strong>5+ Years</strong> in cryptocurrency and DeFi ecosystem</li>
+                <li><strong>Top Ambassador</strong> at Solidomoney</li>
+                <li><strong>Founder/Developer</strong> building AI-powered trading platforms</li>
+                <li><strong>Top 4</strong> in State-Level Olympiad Mathematics Competition</li>
+                <li><strong>Fast Learner</strong> - Expert at mastering complex technical concepts</li>
+                <li><strong>Ambassador</strong> at DeLance (Web3 Freelance Platform)</li>
+            </ul>
+
+            <h2>📁 Featured Projects</h2>
+            <p>Check out my latest work in the <a onclick="showPage('projects')">Projects</a> section:</p>
+            <ul>
+                <li><strong>CycleMind</strong> - AI portfolio rebalancer for Bitget exchange</li>
+                <li><strong>Bitedge</strong> - AI backtest engine for humans and agents</li>
+                <li>And more cutting-edge crypto projects...</li>
+            </ul>
+
+            <h2>📞 Get In Touch</h2>
+            <p>Ready to collaborate on the next big thing in crypto?</p>
+            <ul>
+                <li>🐦 <strong>Twitter:</strong> <a href="https://twitter.com/defitony0x" target="_blank">@defitony0x</a></li>
+                <li>💬 <strong>Telegram:</strong> <a href="https://t.me/defitony0x" target="_blank">@defitony0x</a></li>
+            </ul>
+            <p><strong>Let's build the future of decentralized finance together!</strong> 🚀</p>
+        </div>
+
+        <!-- PROJECTS PAGE -->
+        <div id="projects" class="page">
+            <h1>My Projects</h1>
+            <p>Here are the cutting-edge projects I'm building in the crypto and AI space:</p>
+
+            <div class="projects">
+                <div class="project-card">
+                    <h3>CycleMind</h3>
+                    <p><strong>AI Portfolio Rebalancer for Bitget Exchange</strong></p>
+                    <p>Combines institutional-grade analytics with AI-driven insights to optimize trading strategies.</p>
+                    <div class="tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Trading</span>
+                        <span class="tag">DeFi</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <p><strong>My Role:</strong> Founder & Developer</p>
+                    <p><strong>Tech Stack:</strong> Python, FastAPI, JavaScript, Claude Sonnet, Bitget API</p>
+                    <p><strong>Live Demo:</strong> <a href="https://cyclemind.vercel.app" target="_blank">cyclemind.vercel.app</a></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Bitedge</h3>
+                    <p><strong>AI Backtest Engine for Humans and Agents</strong></p>
+                    <p>Sophisticated AI backtest engine enabling rapid testing of trading strategies with real market data.</p>
+                    <div class="tags">
+                        <span class="tag">AI</span>
+                        <span class="tag">Backtesting</span>
+                        <span class="tag">Trading</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <p><strong>My Role:</strong> Developer & Founder</p>
+                    <p><strong>Tech Stack:</strong> Python, FastAPI, JavaScript, Claude Sonnet</p>
+                    <p><strong>Live Demo:</strong> <a href="https://bitedge.vercel.app" target="_blank">bitedge.vercel.app</a></p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Solidomoney</h3>
+                    <p><strong>Top Ambassador</strong></p>
+                    <p>Building community and promoting DeFi adoption at Solidomoney, a leading DeFi platform.</p>
+                    <div class="tags">
+                        <span class="tag">DeFi</span>
+                        <span class="tag">Community</span>
+                        <span class="tag">Ambassador</span>
+                    </div>
+                    <p><strong>Achievements:</strong> Recognized as Top Ambassador, built engaged community, created educational content</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>DeLance</h3>
+                    <p><strong>Web3 Freelance Platform Ambassador</strong></p>
+                    <p>Connecting talented Web3 professionals with quality projects in the blockchain ecosystem.</p>
+                    <div class="tags">
+                        <span class="tag">Web3</span>
+                        <span class="tag">Freelance</span>
+                        <span class="tag">Ambassador</span>
+                    </div>
+                    <p><strong>Role:</strong> Ambassador and Community Builder</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="about" class="page">
+            <h1>About Tony Legend</h1>
+
+            <h2>Who I Am</h2>
+            <p>I'm a full-stack developer and crypto enthusiast with <strong>5+ years of experience</strong> in the blockchain and DeFi ecosystem. I specialize in building intelligent trading systems, AI-powered applications, and cutting-edge Web3 solutions.</p>
+
+            <h2>Experience & Achievements</h2>
+            <ul>
+                <li><strong>5+ Years</strong> in cryptocurrency and DeFi</li>
+                <li><strong>Top Ambassador</strong> at Solidomoney</li>
+                <li><strong>Founder/Developer</strong> of AI trading platforms</li>
+                <li><strong>Top 4</strong> in State-Level Olympiad Mathematics Competition</li>
+                <li><strong>Fast Learner</strong> - Expert at mastering complex technical concepts</li>
+                <li><strong>Ambassador</strong> at DeLance (Web3 Freelance Platform)</li>
+            </ul>
+
+            <h2>Core Competencies</h2>
+            <h3>Development</h3>
+            <ul>
+                <li>Frontend: HTML, CSS, JavaScript, React</li>
+                <li>Backend: Python, FastAPI, Node.js</li>
+                <li>Blockchain: Solidity, Smart Contracts, DeFi Protocols</li>
+                <li>AI/ML: AI Agents, Claude Sonnet integration, Strategy optimization</li>
+            </ul>
+
+            <h3>Specializations</h3>
+            <ul>
+                <li>💰 <strong>DeFi & Protocols</strong> - Deep protocol design and mechanics</li>
+                <li>📊 <strong>Trading Systems</strong> - Backtesting, strategy optimization</li>
+                <li>🤖 <strong>AI Integration</strong> - Autonomous agents, intelligent automation</li>
+                <li>📈 <strong>Prediction Markets</strong> - Market mechanics and design</li>
+                <li>📢 <strong>Content Creation</strong> - Educational materials and community engagement</li>
+            </ul>
+
+            <h2>Philosophy</h2>
+            <p>I believe in building <strong>transparent, intelligent, and user-centric</strong> solutions in the Web3 space. Whether it's through code, content, or community engagement, I'm committed to advancing the adoption and understanding of decentralized finance.</p>
+
+            <h2>Let's Connect</h2>
+            <p>Interested in collaborating on exciting crypto projects?</p>
+            <ul>
+                <li>🐦 <strong>Twitter:</strong> <a href="https://twitter.com/defitony0x" target="_blank">@defitony0x</a></li>
+                <li>💬 <strong>Telegram:</strong> <a href="https://t.me/defitony0x" target="_blank">@defitony0x</a></li>
+            </ul>
+            <p><strong>Let's build the future of decentralized finance together!</strong> 🚀</p>
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div id="contact" class="page">
+            <h1>Get In Touch</h1>
+            <p>Interested in collaborating or just want to chat about crypto, DeFi, or AI? Reach out!</p>
+
+            <h2>Connect With Me</h2>
+            <h3>Social Media</h3>
+            <ul>
+                <li>
+                    <strong>Twitter: <a href="https://twitter.com/defitony0x" target="_blank">@defitony0x</a></strong>
+                    <ul>
+                        <li>Latest crypto insights and project updates</li>
+                        <li>Real-time market analysis and thoughts</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Telegram: <a href="https://t.me/defitony0x" target="_blank">@defitony0x</a></strong>
+                    <ul>
+                        <li>Direct messaging and collaboration</li>
+                        <li>Community discussions</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>What I'm Open To</h2>
+            <ul>
+                <li>✅ Collaboration on DeFi projects and Web3 startups</li>
+                <li>✅ Consulting on trading systems and AI integration</li>
+                <li>✅ Partnerships in the crypto ecosystem</li>
+                <li>✅ Speaking at crypto conferences and events</li>
+                <li>✅ Mentoring aspiring crypto developers</li>
+                <li>✅ Contract Work on innovative blockchain projects</li>
+            </ul>
+
+            <h2>My Expertise</h2>
+            <p>If you're looking for help with:</p>
+            <ul>
+                <li>Building AI-powered trading platforms</li>
+                <li>DeFi protocol development</li>
+                <li>Smart contract programming</li>
+                <li>Prediction market design</li>
+                <li>Content creation for crypto projects</li>
+                <li>Community building in Web3</li>
+            </ul>
+
+            <p><strong>Let's talk!</strong> Reach out on <a href="https://twitter.com/defitony0x" target="_blank">Twitter</a> or <a href="https://t.me/defitony0x" target="_blank">Telegram</a>, and I'll get back to you ASAP.</p>
+            <p><strong>Ready to build something amazing?</strong> 🚀</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tony Legend. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+
+            // Remove active class from all nav links
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            // Show selected page
+            document.getElementById(pageId).classList.add('active');
+
+            // Add active class to clicked nav link
+            document.getElementById('nav-' + pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
