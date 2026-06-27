@@ -1,36 +1,43 @@
 ---
 title: "Contact"
+slug: "contact"
 ---
 
 # Get In Touch
 
-I'd love to hear from you! Whether you have a project in mind, want to collaborate, or just want to chat about tech, feel free to reach out.
+Interested in collaborating or just want to chat about crypto, DeFi, or AI? Reach out!
 
-## Contact Information
+## Connect With Me
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **GitHub**: [@TonyLegend-77](https://github.com/TonyLegend-77)
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
-- **Twitter**: [@YourHandle](https://twitter.com/your-handle)
+### Social Media
 
-## Contact Form
+- **Twitter:** [@defitony0x](https://twitter.com/defitony0x)
+  - Latest crypto insights and project updates
+  - Real-time market analysis and thoughts
+  
+- **Telegram:** [@defitony0x](https://t.me/defitony0x)
+  - Direct messaging and collaboration
+  - Community discussions
 
-You can use services like Formspree or Netlify Forms to handle contact form submissions.
+## What I'm Open To
 
-```html
-<form name="contact" method="POST" action="https://formspree.io/f/YOUR_FORM_ID">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
-```
+✅ Collaboration on DeFi projects and Web3 startups
+✅ Consulting on trading systems and AI integration
+✅ Partnerships in the crypto ecosystem
+✅ Speaking at crypto conferences and events
+✅ Mentoring aspiring crypto developers
+✅ Contract Work on innovative blockchain projects
 
-## Social Media
+## My Expertise
 
-Connect with me on your favorite platforms:
+If you're looking for help with:
+- Building AI-powered trading platforms
+- DeFi protocol development
+- Smart contract programming
+- Prediction market design
+- Content creation for crypto projects
+- Community building in Web3
 
-- [GitHub](https://github.com/TonyLegend-77)
-- [LinkedIn](https://linkedin.com)
-- [Twitter](https://twitter.com)
-- [Instagram](https://instagram.com)
+**Let's talk!** Reach out on Twitter or Telegram.
+
+**Ready to build something amazing?** 🚀

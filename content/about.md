@@ -1,54 +1,39 @@
 ---
 title: "About Me"
+slug: "about"
 ---
 
 # About Tony Legend
 
-## Who Am I?
+I'm a full-stack developer and crypto enthusiast with **5+ years of experience** in the blockchain and DeFi ecosystem. I specialize in building intelligent trading systems, AI-powered applications, and cutting-edge Web3 solutions.
 
-I'm a passionate developer and designer from [Your Location]. With [X years] of experience in web development, I love creating digital solutions that are both beautiful and functional.
+## Experience & Achievements
 
-## My Journey
+- **5+ Years** in cryptocurrency and DeFi
+- **Top Ambassador** at Solidomoney
+- **Founder/Developer** of AI trading platforms
+- **Top 4** in State-Level Olympiad Mathematics Competition
+- **Fast Learner** - Expert at mastering complex technical concepts
+- **Ambassador** at DeLance (Web3 Freelance Platform)
 
-My journey in tech started when... [Your Story]
+## Core Competencies
 
-## Skills
+### Development
+- Frontend: HTML, CSS, JavaScript, React
+- Backend: Python, FastAPI, Node.js
+- Blockchain: Solidity, Smart Contracts, DeFi Protocols
+- AI/ML: AI Agents, Claude Sonnet integration
 
-### Programming Languages
-- JavaScript/TypeScript
-- Python
-- [Your other languages]
+### Specializations
+- 💰 DeFi & Protocols
+- 📊 Trading Systems & Backtesting
+- 🤖 AI Integration
+- 📈 Prediction Markets
+- 📢 Content Creation
 
-### Frontend
-- React
-- Vue.js
-- HTML/CSS
-- Tailwind CSS
+## Connect With Me
 
-### Backend
-- Node.js
-- Express
-- PostgreSQL
-- MongoDB
+- 🐦 **Twitter:** [@defitony0x](https://twitter.com/defitony0x)
+- 💬 **Telegram:** [@defitony0x](https://t.me/defitony0x)
 
-### Tools & Platforms
-- Git/GitHub
-- Docker
-- AWS
-- Vercel
-
-## Experience
-
-### Role Title - Company Name (2023 - Present)
-Brief description of your role and responsibilities.
-
-### Previous Role - Previous Company (2022 - 2023)
-Describe your previous position and achievements.
-
-## Education
-
-**Degree Name** - University Name (2020)
-
-## Let's Connect
-
-Feel free to reach out on [social media platforms] or via email.
+Let's build the future of decentralized finance together! 🚀

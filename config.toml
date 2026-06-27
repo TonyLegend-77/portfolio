@@ -2,12 +2,18 @@ baseurl = "https://defitonyportfolio.vercel.app/"
 title = "Tony Legend - Portfolio"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-publishDir = "public"
-outputs = {page = ["HTML"]}
+themeDir = ""
+summaryLength = 10
+outputFormats = {page = ["HTML"], section = ["HTML"]}
 
 [params]
   description = "Full-stack developer, designer, and creator"
   author = "Tony Legend"
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  page = ["HTML"]
 
 [menu]
   [[menu.main]]
