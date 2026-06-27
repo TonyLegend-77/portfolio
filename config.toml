@@ -1,15 +1,13 @@
 baseurl = "https://yourportfolio.vercel.app/"
 title = "Tony Legend - Portfolio"
+languageCode = "en-us"
+defaultContentLanguage = "en"
 parameterizeUrls = true
-
-[module]
-  [[module.imports]]
-    path = "github.com/theNewDynamic/gohugo-theme-ananke"
 
 [params]
   description = "Full-stack developer, designer, and creator"
   author = "Tony Legend"
-  
+
 [menu]
   [[menu.main]]
     name = "Home"
