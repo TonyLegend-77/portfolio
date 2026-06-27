@@ -1,5 +1,23 @@
 {{ define "main" }}
 <section class="container">
-    {{ .Content }}
+    <h1>{{ .Title }}</h1>
+    <p class="blog-date">{{ .Date.Format "January 2, 2006" }}</p>
+    
+    {{ if .Params.tags }}
+    <div class="tags">
+        {{ range .Params.tags }}
+        <span class="tag">{{ . }}</span>
+        {{ end }}
+    </div>
+    {{ end }}
+    
+    <article>
+        {{ .Content }}
+    </article>
+    
+    <hr style="margin: 2rem 0;">
+    <p>
+        <a href="{{ .Parent.RelPermalink }}">← Back</a>
+    </p>
 </section>
 {{ end }}
