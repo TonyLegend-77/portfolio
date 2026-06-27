@@ -1,8 +1,9 @@
-baseurl = "https://yourportfolio.vercel.app/"
+baseurl = "https://defitonyportfolio.vercel.app/"
 title = "Tony Legend - Portfolio"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-parameterizeUrls = true
+publishDir = "public"
+outputs = {page = ["HTML"]}
 
 [params]
   description = "Full-stack developer, designer, and creator"
@@ -18,14 +19,10 @@ parameterizeUrls = true
     url = "/projects/"
     weight = 2
   [[menu.main]]
-    name = "Blog"
-    url = "/blog/"
-    weight = 3
-  [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 3
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 5
+    weight = 4
