@@ -1,0 +1,15 @@
+{
+  "name": "tony-legend-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio site",
+  "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo --minify"
+  },
+  "keywords": [
+    "portfolio",
+    "hugo",
+    "vercel"
+  ],
+  "author": "Tony Legend"
+}
